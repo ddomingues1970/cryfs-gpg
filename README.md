@@ -46,5 +46,5 @@ No need to remember cryfs password or config file. :-)
 
 This simple program is just a proof of concept, the correct way would be fork cryfs from github and implement this functionality. 
 
-Privacy: Nothing to hide, but everthing to protect. 
+Privacy: Nothing to hide, everthing to protect. 
 
