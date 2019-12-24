@@ -42,7 +42,17 @@ To mount the cryfs-gpg execute the command:
 
 $cryfs-gpg -b ~/dropbox/basedir -m ~/dropbox/mountdir
 
-No need to remember cryfs password or config file. :-)
+No need to remember cryfs password or config file location. :-)
+Both are encrypted using your PGP public key. (-r parameter) and decrypted with private key.
+
+The password generated for cryfs looks like this:
+ 
+'$user1$fjNKZdaevYT94d.lu3gXRf7SNHcu0HZGzwNMpxe5zDtL4kj.JsXIe.1bMkW0yGrM6gooErJOkuYo0yyuqpbqz1'
+
+It has 94 characters and virtually impossible to crack.
+
+It would take a computer 71,141,121,218,454 quinquagintillion years to crack that password according 
+https://www.comparitech.com/privacy-security-tools/password-strength-test/
 
 This simple program is just a proof of concept, the correct way would be fork cryfs from github and implement this functionality. 
 
