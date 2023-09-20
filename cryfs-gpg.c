@@ -506,7 +506,7 @@ bool check_gnugpg2()
 
 	arg.argc = 1;
 
-	asprintf(&arg.argv[0], "gpg2 --version 2>&1 > /dev/null");
+	asprintf(&arg.argv[0], "gpg --version 2>&1 > /dev/null");
 
 	int ret = exec_command(arg);
 
